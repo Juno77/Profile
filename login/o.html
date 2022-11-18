@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <form>
+      <h1>회원가입</h1>
+      <div>email : <input type="email" id="signUpEmail" /></div>
+      <div>password : <input type="password" id="signUpPassword" /></div>
+      <button type="submit" id = "signUpButton">회원가입 하기</button>
+      <button>로그인</button>
+    </form>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js';
+      import { getAnalytics } from 'https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js';
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: 'AIzaSyBd-NP_0CN-wJrZArZz9kC6sSCKCECrShE',
+        authDomain: 'easylogin-61643.firebaseapp.com',
+        projectId: 'easylogin-61643',
+        storageBucket: 'easylogin-61643.appspot.com',
+        messagingSenderId: '201178237982',
+        appId: '1:201178237982:web:b22626ea211cf6d552f20f',
+        measurementId: 'G-B9G9JXS0NL',
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+
+      import { getAuth, createUserWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js';
+
+      document.getElementById('signUpButton').addEventListener('click', (event) => {
+        event.preventDefault()
+        const email = document.getElementById('signUpEmail').value
+        const password = document.getElementById('signUpPassword').value
+        const auth = getAuth();
+      createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          // Signed in
+          const user = userCredential.user;
+          // ...
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          // ..
+        });
+      })
+
+      
+
+      console.log('hello world');
+      console.log(app);
+    </script>
+  </body>
+</html>

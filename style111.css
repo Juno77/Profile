@@ -1,0 +1,193 @@
+div {
+    display: block;
+}
+
+.defaultPicture {
+    display: block;
+}
+
+.top-profileImgFirst:hover {
+    opacity: 0.7;
+}
+
+.top-profileImgFirst {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center center;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.top-profileImgSecond {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center center;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.2s ease-in-out 0s;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center center;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.beforeDropdown {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 3.5rem;
+    right: 0rem;
+    width: auto;
+    height: 0px;
+}
+
+.afterDropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 3.5rem;
+  right: 0rem;
+  width: auto;
+  height: auto;
+}
+
+.boundaryProfile {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px;
+  border-radius: 1rem;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 216px;
+}
+
+.boundaryProfileSecond {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  width: 100%;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+}
+
+.dropdownProfilePicture {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center center;
+  cursor: auto;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.boundaryProfile .profileInfoWrapper {
+  overflow: clip;
+  margin-left: 10px;
+}
+
+.boundaryProfile .displayName {
+    font-size: 1rem;
+    line-height: 1em;
+    font-weight: 500;
+}
+
+.boundaryProfile .username {
+font-size: 0.8125rem;
+line-height: 1em;
+margin-top: 6px;
+color: rgb(142, 142, 142);
+}
+
+.boundaryProfile .menuWrapper {
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+.infoModify {
+    display: flex;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8125rem;
+    width: 100%;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.75rem;
+    background-color: rgb(255, 255, 255);
+    line-height: 1em;
+    color: rgb(112, 112, 112);
+    -webkit-box-align: center;
+    align-items: center;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.personPic {
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+    fill: rgb(196, 196, 196);
+}
+
+.spokePic {
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+    fill: rgb(196, 196, 196);
+}
+
+.buttonLogout {
+    display: flex;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8125rem;
+    width: 100%;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.75rem;
+    background-color: rgb(255, 255, 255);
+    line-height: 1em;
+    color: rgb(112, 112, 112);
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.logoutPic {
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+    fill: rgb(196, 196, 196);
+}
